@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DPS Jedlina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/script/jquery.fullpage.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+ 
+
+
+
+  <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="styles/main.css"  type="text/css"/>
+
+  <style>
+@media (max-width: 768px) {
+  #page-content-wrapper {
+    margin-top: 45px;
+  }
+  
+  #sidebar-wrapper {
+    display: none;
+  }
+  
+  #content {    
+  margin-left: 0px;
+  }
+  
+  .pz-home-text {
+      left:50%;
+      
+  }
+  
+  .pz-container {
+
+    margin:10px;
+}
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;    
+  }
+
+  #page-content-wrapper {
+    margin-left: 250px;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {				
+    .twoColumns{
+        -webkit-column-gap: 0px;
+           -moz-column-gap: 0px;
+                column-gap: 0px;
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }		
+}
+
+@media (max-width:1000px){
+    .btn2 {
+        width:150px;
+    }
+}
+
+      
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Sidebar -->
+  <div class="pz-sidenav" id="sidebar-wrapper">
+      
+      <div class="sidebar-heading text-center mt-3 mb-3"><img class="img-fluid" style="max-height:170px" src="logo.png"></div>
+      <div class="sidebar-heading text-center mb-2"><img class="img-fluid" style="max-height:170px" src="napis.png"></div>
+    <div class="list-group list-group-flush ">
+        <div class="link-background text-center">
+            <a href="index.html" class="btn middle">Strona Główna</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="dzialalnosc.html" class="btn middle">Działalność</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="aktualnosci.html" class="btn middle">Aktualności</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="informator.html" class="btn middle">Informator</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="przetargi.html" class="btn middle">Przetargi</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="praca.html" class="btn middle">Praca</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="galeria.html" class="btn middle">Galeria</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="rodo.html" class="btn middle">RODO</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="bip.html" class="btn middle">BIP</a>
+        </div>
+        
+<!--        <a href="index.html" class="btn">STRONA GŁÓWNA</a>-->
+        
+      
+      
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom d-md-none">
+      <a class="navbar-brand">DPS w Lubzinie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="index.html">Strona Główna</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="aktualnosci.html">Działalność</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_bytowe.html">Aktualności</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_opiekuncze.html">Informator</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_wspierajace.html">Przetargi</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="historia_domu.html">Praca</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="kontakt_i_dojazd.html">Galeria</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="wademekum.html">RODO</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="galeria_zdjec.html">BIP</a>
+          
+        </ul>
+      </div>
+    </nav>
+  
+  
+  <!-- Page Content -->
+  <div id="content">
+      <img class="home_bgrd" src="main_photo.jpg"/>
+<div class="pz-home-text">
+<h1 align="center" style="color:white"><br /></h1><h3 class="text-center" style="color:white"> „Oczy człowieka pokazują głębię jego serca,
+
+bez  względu w jakiej twarzy są osadzone.
+
+Bez  względu na to, jakie ręce się do ciebie wyciągają.
+
+W tych oczach jest zawsze wypisana miłość,
+
+albo pragnienie miłości.”
+
+                                                           </h3><p style="text-align: right;">&nbsp;Ks. Bp Marek Solarczyk</p> 
+</div>
+      
+    
+    <div class="row">
+            <div class="offset-lg-2 col-lg-8">
+            
+            
+            
+            
+            <div class="row">
+                
+                <div class="pz-section div-reh-4">
+                    <h2>Witamy na stronie DPS Kąty</h2>
+                    
+
+Dom Pomocy Społecznej w Kątach powstał w 1975 roku jako placówka przeznaczona dla dzieci i młodzieży niepełnosprawnych intelektualnie.
+W 2012 roku rozszerzono typ Domu i mogą w nim zamieszkiwać również dorosłe osoby niepełnosprawne.<br>
+Placówka mieści się w zabytkowym, dziewiętnastowiecznym dworku położonym w samym centrum malowniczego parku krajobrazowego wpisanego do rejestru zabytków województwa mazowieckiego. Lokalizacja Domu Pomocy Społecznej stwarza optymalne warunki życia i terapii mieszkańców pod względem przyrodniczym i klimatycznym. Już od ponad trzydziestu lat ośrodek stanowi "drugi dom" dla osób niepełnosprawnych intelektualnie.<br>
+Celem Domu jest zapewnienie mieszkańcom całodobowej opieki poprzez świadczenie usług opiekuńczych, bytowych, wspomagających   
+i edukacyjnych.<br>
+Usługi opiekuńcze świadczone przez Dom obejmują: pomoc w podstawowych czynnościach życia codziennego, pielęgnację, w tym pielęgnację w czasie choroby, opiekę higieniczną, niezbędną pomoc w załatwianiu spraw osobistych, kontakty z otoczeniem, edukację, rehabilitację, organizację czasu wolnego, rozrywkę i pomoc w korzystaniu ze świadczeń zdrowotnych.<br>
+W  dniu 10 czerwca 2008 roku oddano do użytku nową mieszkalną części Domu. Powstał nowoczesny kompleks przeznaczony
+dla 50 mieszkańców, przystosowany do całodobowej opieki, rehabilitacji, edukacji i wypoczynku.<br>
+<b>W dniu 22.12.2008 roku Dom Pomocy Społecznej w Kątach został wpisany na czas nieokreślony do Rejestru domów pomocy społecznej województwa mazowieckiego pod pozycją nr 58.</b>
+<br>
+Koszt utrzymania mieszkańca w 2020 roku, ustalony na podstawie Zarządzenia Nr 19/20 Starosty Mińskiego z dnia 27 lutego 2020 roku wynosi: 4.742,11 zł. Zarządzenie zostało opublikowane w Dzienniku Urzędowym Województwa Mazowieckiego pod pozycją 3605.   <br>
+
+<b>
+                    Dom Pomocy Społecznej w Kątach<br>
+Kąty 22, 05-332 Siennica,<br>
+telefon: 25 799 19 07 <br>
+                    </b>
+jest prowadzony przez Powiat Miński z siedzibą w Mińsku Mazowieckim przy ul. Kościuszki 3<br>
+05-300 Mińsk Mazowiecki<br>
+telefon: centrala 25 759 87 00<br>
+
+Dyrektor Domu Pomocy Społecznej w Kątach - pani Danuta Ekert przyjmuje interesantów w poniedziałki i czwartki w godzinach: 9.00 -11.00.<br>
+Kontakt telefoniczny z Dyrektorem: 25 757 26 71.
+                    
+                    <div class="container-fluid">
+        <div class="row" style="clear:both;">
+                    <a rel="714" href="zalacznik_730.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_730.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+                <a rel="714" href="zalacznik_732.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_732.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+            <a rel="714" href="zalacznik_734.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_734.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+            
+             <a rel="714" href="zalacznik_735.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_735.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+             <a rel="714" href="zalacznik_736.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_736.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+             <a rel="714" href="zalacznik_737.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_737.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+            
+            <a rel="714" href="zalacznik_738.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_738.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+            <a rel="714" href="zalacznik_739.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_739.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+            <a rel="714" href="zalacznik_796.jpg" 
+                    title="Bakalia ze źrebakiem (1).jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4 col-6 mb-2 pz-img text-center">
+                    <img src="zalacznik_796.jpg"  alt="Bakalia ze źrebakiem (1).jpg" class="img-fluid pz-img_m rounded ">
+                    </a>
+            
+                        
+                        
+                        
+        </div></div>
+                    
+                    
+                    
+                
+            </div>
+                
+            
+            
+                
+            </div>
+           
+            
+        </div>
+   
+      </div>
+   
+      
+      <div class="row" >
+			<div class="text-center col-12 mt-3 mb-3">
+				<div>
+					Created by <a  href="http://www.arisco.pl/" target="_blank" title="Tworzenie stron internetowych">ARISCO</a>
+				</div>
+				<div>
+					Copyright &#169; 2020 DPS Jedlina. Wszelkie prawa zastrzeżone
+				</div>
+			</div>
+                </div>
+      </div>
+
+      
+        <br> 
+      
+
+  
+
+
+
+<script>
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
+</script>
+  
+</body>
+</html>
+

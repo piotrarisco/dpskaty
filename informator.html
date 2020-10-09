@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DPS Jedlina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/script/jquery.fullpage.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+ 
+
+
+
+  <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="styles/main.css"  type="text/css"/>
+
+  <style>
+@media (max-width: 768px) {
+  #page-content-wrapper {
+    margin-top: 45px;
+  }
+  
+  #sidebar-wrapper {
+    display: none;
+  }
+  
+  #content {    
+  margin-left: 0px;
+  }
+  
+  .pz-home-text {
+      left:50%;
+      
+  }
+  
+  .pz-container {
+
+    margin:10px;
+}
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;    
+  }
+
+  #page-content-wrapper {
+    margin-left: 250px;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {				
+    .twoColumns{
+        -webkit-column-gap: 0px;
+           -moz-column-gap: 0px;
+                column-gap: 0px;
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }		
+}
+
+@media (max-width:1000px){
+    .btn2 {
+        width:150px;
+    }
+}
+
+      
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Sidebar -->
+  <div class="pz-sidenav" id="sidebar-wrapper">
+      
+      <div class="sidebar-heading text-center mt-3 mb-3"><img class="img-fluid" style="max-height:170px" src="logo.png"></div>
+      <div class="sidebar-heading text-center mb-2"><img class="img-fluid" style="max-height:170px" src="napis.png"></div>
+    <div class="list-group list-group-flush ">
+        <div class="link-background text-center">
+            <a href="index.html" class="btn middle">Strona Główna</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="dzialalnosc.html" class="btn middle">Działalność</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="aktualnosci.html" class="btn middle">Aktualności</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="informator.html" class="btn middle">Informator</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="przetargi.html" class="btn middle">Przetargi</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="praca.html" class="btn middle">Praca</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="galeria.html" class="btn middle">Galeria</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="rodo.html" class="btn middle">RODO</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="bip.html" class="btn middle">BIP</a>
+        </div>
+        
+<!--        <a href="index.html" class="btn">STRONA GŁÓWNA</a>-->
+        
+      
+      
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom d-md-none">
+      <a class="navbar-brand">DPS w Lubzinie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="index.html">Strona Główna</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="aktualnosci.html">Działalność</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_bytowe.html">Aktualności</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_opiekuncze.html">Informator</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_wspierajace.html">Przetargi</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="historia_domu.html">Praca</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="kontakt_i_dojazd.html">Galeria</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="wademekum.html">RODO</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="galeria_zdjec.html">BIP</a>
+          
+        </ul>
+      </div>
+    </nav>
+  
+  
+  <!-- Page Content -->
+  <div id="content">
+      <img class="home_bgrd_s" src="main_photo_s.jpg"/>
+<div class="pz-home-text_s">
+<h1 align="center"><br /></h1><h3 class="" > 
+                                                           </h3><p >
+<u>Dane teleadresowe:</u><br>
+Dom Pomocy Społecznej<br>
+Kąty Nr 22, 05-332 Siennica<br>
+telefon: 25 799 19 07, 25 757 26 71 - Dyrektor<br>
+<u>e-mail:</u><br>
+dpsk@poczta.fm - Dyrektor<br>
+ksiegowosc.dpskaty@gmail.com <br>
+sekretariat.dpskaty@gmail.com<br>
+
+<u>Dyrektor Domu - pani Danuta Ekert</u><br>
+przyjmuje interesantów w poniedziałki i czwartki w godzinach: 9.00-11.00</p> 
+</div>
+      
+    
+    <div class="row">
+            <div class="offset-lg-2 col-lg-8">
+            
+            
+            
+            
+            <div class="row">
+                
+                <div class="pz-section div-reh-4">
+                    <h2>Jak zamieszkać?</h2>
+                    
+Do domu pomocy społecznej kieruje się, a następnie umieszcza osoby wymagające całodobowej opieki z powodu wieku, choroby, niepełnosprawności, nie mogące samodzielnie funkcjonować
+w dotychczasowym miejscu zamieszkania.<br><br>
+
+ 
+
+1. Prośbę o umieszczenie w Domu Pomocy Społecznej w Kątach składa osoba zainteresowana, ustawowy przedstawiciel, opiekun prawny  w ośrodku pomocy społecznej w miejscu zamieszkania. 
+<br><br>
+2. Pracownik socjalny ośrodka pomocy społecznej w ciągu 14 dni jest zobowiązany przeprowadzić  wywiad środowiskowy. 
+ <br><br>
+3. Decyzję o wydaniu skierowania i odpłatności za pobyt w DPS, względnie decyzję odmowną, 
+wydaje kierownik ośrodka pomocy społecznej w miejscu zamieszkania osoby ubiegającej się, jej przedstawiciela ustawowego lub opiekuna z upoważnienia wójta gminy.
+<br><br>
+4. W przypadku odmowy wydania skierowania przysługuje prawo złożenia odwołania.
+<br><br>
+5. Po wydaniu przez kierownika ośrodka pomocy społecznej decyzji o skierowaniu do domu pomocy społecznej, dyrektor Powiatowego Centrum Pomocy Rodzinie w Mińsku Mazowieckim wydaje decyzję
+o umieszczeniu osoby kierowanej w Domu Pomocy Społecznej w Kątach.
+
+ <br><br>
+
+6. Po wydaniu decyzji kierującej do Domu, termin zamieszkania w placówce ustala się z Dyrektorem Domu Pomocy Społecznej w Kątach.
+
+ <br><br>
+
+<h2>Zasady odpłatności za pobyt</h2>
+
+  <br>
+
+Pobyt w domu pomocy społecznej jest odpłatny do wysokości średniego miesięcznego kosztu utrzymania w danym roku.
+ <br><br>
+ 
+
+1. Pobyt w domu pomocy społecznej jest odpłatny do wysokości średniego miesięcznego kosztu utrzymania. <br>
+
+Opłatę za pobyt w Domu Pomocy Społecznej w Kątach wnoszą:<br>
+- mieszkaniec - do wysokości 70% swojego dochodu.<br>
+
+- małżonek, zstępni przed wstępnymi - zgodnie z umową zawartą z ośrodkiem pomocy społecznej.
+<br>
+- gmina, z której osoba została skierowana do domu pomocy społecznej - w wysokości różnicy między średnim kosztem utrzymania w domu pomocy społecznej a opłatami wnoszonymi przez osoby zobowiązane.
+<br><br>
+ 
+
+2. Opłatę mogą wnosić także inne osoby, nie wymienione wyżej (na podstawie odrębnej umowy).
+<br><br>
+ 
+
+3. W ustaleniu wysokości opłaty za pobyt jak i rozpatrzeniu wniosku o zwolnienie z tej opłaty uwzględnia się sytuację dochodową osoby zobowiązanej, zgodnie z ustalonymi w pomocy społecznej kryteriami dochodowymi.
+
+ 
+<br><br>
+4. Mieszkaniec domu wnosi opłatę do kasy domu lub na jego rachunek bankowy. Za jego zgodą opłata może być potrącana z emerytury lub renty mieszkańca – przez właściwy organ emerytalno-rentowy, z zasiłku stałego – przez ośrodek pomocy społecznej dokonujący wypłaty świadczenia; opłatę za pobyt ośrodek pomocy społecznej przekazuje na rachunek bankowy domu pomocy społecznej.
+
+ <br><br>
+
+5. Mieszkaniec domu, a także inna osoba obowiązana do wnoszenia opłat za pobyt w domu pomocy społecznej, jeżeli mieszkaniec domu przebywa u tej osoby, nie ponoszą opłat za okres nieobecności mieszkańca domu nieprzekraczającej 21 dni w roku kalendarzowym.  Za małoletniego mieszkańca domu nie wnosi się opłaty z jego dochodu i dochodu osób obowiązanych do wnoszenia opłaty w okresie jego nieobecności nieprzekraczającej 70 dni w roku kalendarzowym, jeżeli w tym czasie przebywa w domu rodzinnym.
+
+                    
+                    
+                    
+                
+            </div>
+                
+            
+            
+                
+            </div>
+           
+            
+        </div>
+   
+      </div>
+   
+      
+      <div class="row" >
+			<div class="text-center col-12 mt-3 mb-3">
+				<div>
+					Created by <a  href="http://www.arisco.pl/" target="_blank" title="Tworzenie stron internetowych">ARISCO</a>
+				</div>
+				<div>
+					Copyright &#169; 2020 DPS Jedlina. Wszelkie prawa zastrzeżone
+				</div>
+			</div>
+                </div>
+      </div>
+
+      
+        <br> 
+      
+
+  
+
+
+
+<script>
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
+</script>
+  
+</body>
+</html>
+
