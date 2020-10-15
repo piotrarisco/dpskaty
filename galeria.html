@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DPS Jedlina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/script/jquery.fullpage.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+ 
+
+
+
+  <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="styles/main.css"  type="text/css"/>
+
+  <style>
+@media (max-width: 768px) {
+  #page-content-wrapper {
+    margin-top: 45px;
+  }
+  
+  #sidebar-wrapper {
+    display: none;
+  }
+  
+  #content {    
+  margin-left: 0px;
+  }
+  
+  .pz-home-text {
+      left:50%;
+      
+  }
+  
+  .pz-container {
+
+    margin:10px;
+}
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;    
+  }
+
+  #page-content-wrapper {
+    margin-left: 250px;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {				
+    .twoColumns{
+        -webkit-column-gap: 0px;
+           -moz-column-gap: 0px;
+                column-gap: 0px;
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }		
+}
+
+@media (max-width:1000px){
+    .btn2 {
+        width:150px;
+    }
+}
+
+      
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Sidebar -->
+  <div class="pz-sidenav" id="sidebar-wrapper">
+      
+      <div class="sidebar-heading text-center mt-3 mb-3"><img class="img-fluid" style="max-height:170px" src="logo.png"></div>
+      <div class="sidebar-heading text-center mb-2"><img class="img-fluid" style="max-height:170px" src="napis.png"></div>
+    <div class="list-group list-group-flush ">
+        <div class="link-background text-center">
+            <a href="index.html" class="btn middle">Strona Główna</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="dzialalnosc.html" class="btn middle">Działalność</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="aktualnosci.html" class="btn middle">Aktualności</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="informator.html" class="btn middle">Informator</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="przetargi.html" class="btn middle">Przetargi</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="praca.html" class="btn middle">Praca</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="galeria.html" class="btn middle">Galeria</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="rodo.html" class="btn middle">RODO</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="bip.html" class="btn middle">BIP</a>
+        </div>
+        
+<!--        <a href="index.html" class="btn">STRONA GŁÓWNA</a>-->
+        
+      
+      
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom d-md-none">
+      <a class="navbar-brand">DPS w Lubzinie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="index.html">Strona Główna</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="aktualnosci.html">Działalność</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_bytowe.html">Aktualności</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_opiekuncze.html">Informator</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_wspierajace.html">Przetargi</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="historia_domu.html">Praca</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="kontakt_i_dojazd.html">Galeria</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="wademekum.html">RODO</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="galeria_zdjec.html">BIP</a>
+          
+        </ul>
+      </div>
+    </nav>
+  
+  
+  <!-- Page Content -->
+  <div id="content">
+      <img class="home_bgrd_s" src="main_photo_s.jpg"/>
+<div class="pz-home-text_s">
+<h1 align="center"><br /></h1><h3 class="" > Biuletyn Informacji Publicznej
+      
+    </h3>
+    <a href="">więcej</a>
+</div>
+      
+    
+    <div class="row">
+            <div class="offset-lg-2 col-lg-8">
+            
+            
+            
+            
+            <div class="row">
+                
+                <div class="pz-section div-reh-4">
+                  <h2>GALERIA ZDJĘĆ</h2>
+                    
+                    <div class="row ">
+                         
+                        <div class="col-lg-4 col-sm-6 mt-3">
+                    <div  class="akt_section ">
+                        <a class="akt_link" href="">
+                                                                <img class="akt_img" src="zalacznik_5320.jpg" alt="Obraz"/>                                                                
+                                                        <div class="akt_descr mt-3 mb-3">
+                                                                        <div class="akt_title">
+                                               Grill 04.09.2020
+                                        </div>
+                                
+                                <div class="akt_skrot">
+                                        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        <div class="col-lg-4 col-sm-6 mt-3">
+                    <div  class="akt_section ">
+                        <a class="akt_link" href="">
+                                                                <img class="akt_img" src="zalacznik_5316.jpg" alt="Obraz"/>                                                                
+                                                        <div class="akt_descr mt-3 mb-3">
+                                                                        <div class="akt_title">
+                                                Wyjazd do Mińska Mazowieckiego 02.07.2020
+                                        </div>
+                                
+                                <div class="akt_skrot">
+                                       
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        <div class="col-lg-4 col-sm-6 mt-3">
+                    <div  class="akt_section ">
+                        <a class="akt_link" href="">
+                                                                <img class="akt_img" src="zalacznik_5305.jpg" alt="Obraz"/>                                                                
+                                                        <div class="akt_descr mt-3 mb-3">
+                                                                        <div class="akt_title">
+                                               Dyskoteka urodzinowa 18.06.2020
+                                        </div>
+                                
+                                <div class="akt_skrot">
+                                      
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        <div class="col-lg-4 col-sm-6  mt-3">
+                    <div  class="akt_section">
+                        <a class="akt_link" href="">
+                                                                <img class="akt_img" src="zalacznik_5287.jpg" alt="Obraz"/>                                                                
+                                                        <div class="akt_descr mt-3 mb-3">
+                                                                        <div class="akt_title">
+                                               Dzień Dziecka 01.06.2020Zabawa karnawałowa w Domu Pomocy Społecznej w Wirowie 2020
+
+                                        </div>
+                                
+                                <div class="akt_skrot">
+                                        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        <div class="col-lg-4 col-sm-6 mt-3">
+                    <div  class="akt_section ">
+                        <a class="akt_link" href="">
+                                                                <img class="akt_img" src="zalacznik_5286.jpg" alt="Obraz"/>                                                                
+                                                        <div class="akt_descr mt-3 mb-3">
+                                                                        <div class="akt_title">
+                                               Grill 26.05.2020Zabawa karnawałowa 2020
+                                        </div>
+                                
+                                <div class="akt_skrot">
+                                        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                        <div class="col-lg-4 col-sm-6 mt-3">
+                    <div  class="akt_section ">
+                        <a class="akt_link" href="">
+                                                                <img class="akt_img" src="zalacznik_5266.jpg" alt="Obraz"/>                                                                
+                                                        <div class="akt_descr mt-3 mb-3">
+                                                                        <div class="akt_title">
+                                                Dzień Kobiet & Mężczyzn 2020
+                                        </div>
+                                
+                                <div class="akt_skrot">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        	
+                    </div>
+                   
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="pz-pagination">
+                                <a class="active" href="/aktualnosci,0">1</a>
+                                <a href="/aktualnosci,1">2</a>
+                                <a href="/aktualnosci,2">3</a>
+                                <a href="/aktualnosci,3">4</a>
+                                <a href="/aktualnosci,4">5</a>
+                                <a href="/aktualnosci,5">6</a>
+                                <a href="/aktualnosci,6">7</a>
+                                <a href="/aktualnosci,7">8</a>
+                                <a href="/aktualnosci,8">9</a>
+                                <a href="/aktualnosci,9">10</a>
+                                <a href="/aktualnosci,10">11</a>
+                                <a href="/aktualnosci,11">12</a>
+                                <a href="/aktualnosci,12">13</a>
+                                <a href="/aktualnosci,13">14</a>
+                                <a href="/aktualnosci,14">15</a>
+                                <a href="/aktualnosci,15">16</a>
+                                <a href="/aktualnosci,16">17</a>
+                                <a href="/aktualnosci,17">18</a>
+                                <a href="/aktualnosci,18">19</a>
+                                <a href="/aktualnosci,19">20</a>
+                                <a href="/aktualnosci,20">21</a>
+                                <a href="/aktualnosci,21">22</a>
+                                <a href="/aktualnosci,22">23</a>
+                                <a href="/aktualnosci,23">24</a>
+                                <a href="/aktualnosci,24">25</a>
+                                <a href="/aktualnosci,25">26</a>
+                                <a href="/aktualnosci,26">27</a>
+                                <a href="/aktualnosci,27">28</a>
+                                <a href="/aktualnosci,28">29</a>
+                                <a href="/aktualnosci,29">30</a>
+                             </div>
+                        </div>
+                    </div>
+                
+            </div>
+                
+            
+            
+                
+            </div>
+           
+            
+        </div>
+   
+      </div>
+   
+      
+      <div class="row" >
+			<div class="text-center col-12 mt-3 mb-3">
+				<div>
+					Created by <a  href="http://www.arisco.pl/" target="_blank" title="Tworzenie stron internetowych">ARISCO</a>
+				</div>
+				<div>
+					Copyright &#169; 2020 DPS Jedlina. Wszelkie prawa zastrzeżone
+				</div>
+			</div>
+                </div>
+      </div>
+
+      
+        <br> 
+      
+
+  
+
+
+
+<script>
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
+</script>
+  
+</body>
+</html>
+

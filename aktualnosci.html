@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DPS Jedlina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:200,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/script/jquery.fullpage.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+ 
+
+
+
+  <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="styles/main.css"  type="text/css"/>
+
+  <style>
+@media (max-width: 768px) {
+  #page-content-wrapper {
+    margin-top: 45px;
+  }
+  
+  #sidebar-wrapper {
+    display: none;
+  }
+  
+  #content {    
+  margin-left: 0px;
+  }
+  
+  .pz-home-text {
+      left:50%;
+      
+  }
+  
+  .pz-container {
+
+    margin:10px;
+}
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;    
+  }
+
+  #page-content-wrapper {
+    margin-left: 250px;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {				
+    .twoColumns{
+        -webkit-column-gap: 0px;
+           -moz-column-gap: 0px;
+                column-gap: 0px;
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }		
+}
+
+@media (max-width:1000px){
+    .btn2 {
+        width:150px;
+    }
+}
+
+      
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Sidebar -->
+  <div class="pz-sidenav" id="sidebar-wrapper">
+      
+      <div class="sidebar-heading text-center mt-3 mb-3"><img class="img-fluid" style="max-height:170px" src="logo.png"></div>
+      <div class="sidebar-heading text-center mb-2"><img class="img-fluid" style="max-height:170px" src="napis.png"></div>
+    <div class="list-group list-group-flush ">
+        <div class="link-background text-center">
+            <a href="index.html" class="btn middle">Strona Główna</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="dzialalnosc.html" class="btn middle">Działalność</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="aktualnosci.html" class="btn middle">Aktualności</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="informator.html" class="btn middle">Informator</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="przetargi.html" class="btn middle">Przetargi</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="praca.html" class="btn middle">Praca</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="galeria.html" class="btn middle">Galeria</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="rodo.html" class="btn middle">RODO</a>
+        </div>
+        <div class="link-background text-center">
+            <a href="bip.html" class="btn middle">BIP</a>
+        </div>
+        
+<!--        <a href="index.html" class="btn">STRONA GŁÓWNA</a>-->
+        
+      
+      
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom d-md-none">
+      <a class="navbar-brand">DPS w Lubzinie</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="index.html">Strona Główna</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="aktualnosci.html">Działalność</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_bytowe.html">Aktualności</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_opiekuncze.html">Informator</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="uslugi_wspierajace.html">Przetargi</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="historia_domu.html">Praca</a>
+          </li>
+          <li class="nav-item btn from-left">
+            <a class="nav-link" href="kontakt_i_dojazd.html">Galeria</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="wademekum.html">RODO</a>
+          </li>
+            <li class="nav-item btn from-left">
+            <a class="nav-link" href="galeria_zdjec.html">BIP</a>
+          
+        </ul>
+      </div>
+    </nav>
+  
+  
+  <!-- Page Content -->
+  <div id="content">
+      <img class="home_bgrd" src="main_photo.jpg"/>
+<div class="pz-home-text">
+<h1 align="center" style="color:white"><br /></h1><h3 class="text-center" style="color:white"> „Oczy człowieka pokazują głębię jego serca,
+
+bez  względu w jakiej twarzy są osadzone.
+
+Bez  względu na to, jakie ręce się do ciebie wyciągają.
+
+W tych oczach jest zawsze wypisana miłość,
+
+albo pragnienie miłości.”
+
+                                                           </h3><p style="text-align: right;">&nbsp;Ks. Bp Marek Solarczyk</p> 
+</div>
+      
+    
+    <div class="row">
+            <div class="offset-lg-2 col-lg-8">
+            
+            
+            
+            
+            <div class="row">
+                
+                <div class="pz-section div-reh-4">
+                    <h2>Z życia naszego Domu....</h2>
+                    
+                    <img src="zalacznik_5330.png" style="width:50%;"/>
+                    
+                    <div>
+<b>                        U W A G A  !!!   ZAKAZ  ODWIEDZIN 
+<br><br>
+W związku z sytuacją epidemiologiczną, ryzykiem wirusowych zakażeń dróg oddechowych, w trosce o bezpieczeństwo Mieszkańców wprowadza się BEZWZGLĘDNY ZAKAZ odwiedzin w naszym Domu. 
+<br><br><br>
+ 
+
+Komunikat Starosty Mińskiego 
+<br><br><br>
+
+
+Dzień Kobiet & Mężczyzn 2020</b> 
+<br><br>
+W dniu 10 marca 2020 roku cała społeczność naszego Domu świętowała. W tym bowiem dniu obchodziliśmy Dzień Kobiet & Mężczyzn. Zdjęcia do obejrzenia w galerii. 
+
+ <br><br><br>
+
+<b>Bal karnawałowy 2020</b>
+<br><br>
+Wzorem lat ubiegłych w dniu 25 lutego 2020 roku w naszym Domu odbył się bal karnawałowy, okraszony wspaniałą zabawą. Nie mogło oczywiście zabraknąć pysznego poczęstunku z tej okazji. Zdjęcia można obejrzeć w galerii. 
+
+<br><br><br>
+
+<b>Walentynki & urodziny Mieszkańców  2020</b>
+<br><br>
+Tegoroczna zabawa walentynkowa w Domu Pomocy Społecznej w Kątach połączona były z urodzinami naszych Mieszkańców, którym życzymy samych serdeczności....
+Zdjęcia - Galeria zdjęć. 
+<br><br><br>
+
+
+<b>XXVIII Światowy Dzień Chorego w Domu Pomocy Społecznej w Kątach 2020</b>
+<br><br>
+W dniu 10 lutego 2020 roku w Domu Pomocy Społecznej w Kątach odbyła się uroczystość, której przewodniczył Jego Ekscelencja Ksiądz Biskup Marek Solarczyk w ramach obchodów XXVIII Światowego Dniach Chorego. Święto obchodzone jest z inicjatywy Św. Jana Pawła II w myśl słów Księgi Hioba: „Niewidomemu byłem oczami, choremu służyłem za nogi.” (HI 29,15) 
+Wśród zaproszonych gości byli: Krajowy Duszpasterz Służby Zdrowia – Ks. Arkadiusz Zawistowski, Proboszcz Parafii Św. Stanisława Biskupa Męczennika w Siennicy – Ks. Marek Kasprzak, kapelan Domu Pomocy Społecznej Św. Józefa w Mieni – Ks. Marek Chociej, Starosta Powiatu Mińskiego – Pan Antoni Jan Tarczyński, Wicestarosta Powiatu Mińskiego – Pan Witold Kikolski, Przewodnicząca Komisji Zdrowia i Spraw Społecznych Rady Powiatu Mińskiego – Pani Alicja Cichoń, Dyrektor Powiatowego Centrum Pomocy Rodzinie w Mińsku Mazowieckim – Pan Janusz Zdzieborski, 
+Siostry Zgromadzenia Kapucynek Najświętszego Serca Jezusowego z Siennicy, Siostry ze Specjalnego Ośrodka Wychowawczego w Ignacowie, dyrektorzy powiatowych jednostek samorządowych wraz z podopiecznymi.
+Głównym elementem obchodów była uroczysta Liturgia, podczas której Jego Ekscelencja Biskup Marek Solarczyk wraz z Ks. Markiem Chociejem udzielili zgromadzonym namaszczenia sakramentem uzdrowienia chorych. Ta podniosła chwila była dla obecnych głębokim religijnym przeżyciem, którego duchową rangę podniosła oprawa muzyczna zapewniona przez Siostry Kapucynki Najświętszego Serca Jezusowego z Siennicy. A niezwykle pokrzepiające słowa wypowiedziane przez Jego Ekscelencję dodały sił i umocniły wszystkich zgromadzonych w sprawowaniu dalszej opieki nad osobami chorymi. W galerii zdjęć zamieszczamy zdjęcia z uroczystych obchodów Dnia Chorego w Domu Pomocy Społecznej w Kątach.
+<br><br><br>
+ 
+
+<b>Urodziny grudniowe 2019</b>
+
+<br><br>
+Składamy serdeczne życzenia dla grudniowych jubilatów.
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+
+   <br><br><br>
+
+
+<b>Mikołajki 2019 </b>
+<br><br>
+W tym roku jak co roku do naszych mieszkańców przybył Mikołaj. Wszyscy byli grzeczni,  więc każdy zasłużył na prezent. Ten dzień zawsze daje wiele radości. 
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+
+ 
+<br><br><br>
+
+<b>Andrzejki 2019</b>
+<br><br>
+Tego dnia na nasze magiczne zaproszenie, przybyła grupa uczniów z ZSS w Ignacowie, uczestnicy WTZ z Mińska Maz. oraz z PŚDS w Mińsku Maz., aby wspólnie spędzić ten czas wśród wróżek, które przepowiadały każdemu cudowną przyszłość. 
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+
+ <br><br><br>
+
+
+<b>Urodziny listopadowe 2019</b>
+<br><br>
+Jubilatom listopadowym, życzymy wszystkiego najlepszego. 
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+ 
+
+
+<b>Dzień nauczyciela</b>
+<br><br>
+Tego dnia spotkaliśmy się, aby podziękować Nauczycielom uczącym naszych Mieszkańców, za ich trud i poświęcenie, życząc pomyślności i wytrwałości w życiu jak i pracy.
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+ 
+
+
+<b>Urodziny październikowe 2019</b>
+<br><br>
+Jubilatom życzymy wszystkiego najlepszego.
+Zdjęcia – Galeria zdjęć
+<br><br><br>
+ 
+
+
+<b>Otwarcie i poświęcenie FONTANNY 20.09.2019r</b>
+<br><br>
+Tego roku na malowniczym terenie naszej placówki została wybudowana fontanna, dodająca zabytkowemu dworkowi niesamowitego klimatu. Oficjalnego jej otwarcia dokonali Starosta Miński Pan Antoni Jan Tarczyński,   Wicestarosta Witold Kikolski,  Dyrektor Powiatowego Centrum Pomocy Rodzinie w Mińsku Maz. Pan Janusz Zdzieborski, także jeden z wykonawców tego przedsięwzięcia Pan Rafał Czerepiński firma „Kostex” oraz nasza Dyrektor Pani Danuta Ekert. Poświecenia fontanny dokonał proboszcz parafii ks. Marek Kasprzak. W uroczystości wzięli udział również nasi mieszkańcy jak i pracownicy.
+<br>
+
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+
+<b><u>„Magiczna jesień w Kątach 2019”</u></b>
+<br><br>
+
+       Tegoroczna, cykliczna impreza integracyjna w Naszym Domu  odbyła się 12 września pod nazwą „Magiczna jesień w Kątach”. Jak zwykle staraliśmy się zapewnić naszym gościom wiele wyjątkowych atrakcji. Nie mogliśmy, nie zaprosić ponownie młodych artystów z Ukrainy, Teatru Tańca  "Kwieciste Gwiazdy", które tak jak w ubiegłym roku dostarczyły nam mnóstwo niezapomnianych wrażeń. Nie obyło się również bez pokazu iluzjonisty, który wprowadził nas w świat magii. Bardzo dużą atrakcją cieszyły się warsztaty zoologiczne, na których przerażające gady pełzały po szyjach i dłoniach uczestników. Oprawę muzyczną całej imprezy zapewnił nam lokalny zespół „Record”, który również akompaniował naszemu zakładowemu, nowo powstałemu chórowi. Wiele przyjemności naszym gościom sprawiła loteria fantowa w której nie było pustych losów, każdy wylosował coś ciekawego. Uczestnicy mieli możliwość zabawy w kąciku plastycznym, zabawy bańkami mydlanymi, przejażdżki bryczką, zmiany swego wizerunku w kąciku malowania twarzy, a także zrobienia sobie pamiątkowego zdjęcia w fotobudce. Były także: kram z serami, sójkami i swojskim przetworami z owoców oraz wata cukrowa i popcorn.
+        Wszyscy zaproszeni goście zostali suto ugoszczeni przygotowanymi przez personel smakołykami. Były pyszności z grilla, tradycyjny bigos, żurek, pyszne jesienne placki ziemniaczane, przysmaki wiejskie, słodkości, owoce, kawa i herbata.
+         Połączenie powyższych przyjemności sprawiło, że impreza była naprawdę  udana. 
+<br>
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+
+ 
+
+<b><u>Urodziny czerwcowe 2019</u></b>
+<br><br>
+
+Wszystkim urodzonym w tym ciepłym miesiącu życzymy wszystkiego najlepszego.
+<br>
+
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+ 
+
+
+<b><u>Piknik Rodzinny 2019</u></b>
+<br><br>
+Ten dzień, sprawił naszym Mieszkańcom wiele radości. Mieli uroczystą możliwość spędzenia czasu ze swoimi bliskimi. Było bardzo miło.
+<br>
+
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+ 
+
+
+<b><u>Zagroda na końcu wsi 2019</u></b>
+<br><br>
+Mieszkańcy naszego Domu wraz ze swymi nauczycielami wybrali się do miejsca, które sprawiło, że poczuli się, jakby cofnęli się w czasie o jakieś 100 lat.  Niesamowity klimat wiejskich obejść pozwolił im zapomnieć o tempie współczesnej cywilizacji. Gratulujemy pomysłodawcom tego miejsca i dziękujemy za umożliwienie nam poczucia się u Państwa tak błogo. Dziękujemy i pozdrawiamy.
+
+<br>
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+
+<br><br><br>
+  
+
+
+<b><u>Urodziny kwietniowe 2019</u></b>
+
+<br><br>
+Pozdrawiamy wszystkich urodzonych w kwietniu
+<br>
+
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+
+
+
+
+<b><u>Warszawska Papugania</u></b>
+<br><br>
+
+To był niesamowity dzień, grupa Mieszkańców wraz z opiekunami wybrała się do Warszawskiej Papugarnii. Jest to miejsce w którym zwiedzający mają bezpośredni kontakt z ptakami. Mogą je karmić, głaskać czy nosić na rękach. Cudowne, kolorowe istotki są tak przyjazne, że przebywanie wśród nich daje zwiedzającym wiele radości.
+<br>
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br><br>
+ 
+
+
+<b><u>Wspólne kolędowanie</u></b>
+ 
+<br>
+
+21.12.2018
+
+<br><br>
+Dzień 21 grudnia upłynął w niezwykle miłej atmosferze świąt. Tego dnia nauczyciele oraz terapeuci wraz z Mieszkańcami zorganizowali wspólne śpiewanie kolęd.  
+<br>
+
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+
+
+ <br><br><br>
+
+
+ 
+
+ 
+
+<b><u>Dyskoteka Andrzejkowa</u></b>
+
+<br>
+28.11.2018
+<br>
+
+Tego dnia Mieszkańców Nasz  Domu,  tradycyjnie jak co roku odwiedziły wróżki przepowiadające przyszłość.  Wśród wielu różnych wróżb nie zabrakło lania wosku wzbudzającego wśród obecnych  największe zainteresowanie. W tanecznej atmosferze w pełnej ciepła i życzliwości, upłynął czas andrzejkowy.
+<br>
+
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+
+ <br><br><br>
+
+
+<b><u>Urodziny październikowe 2018</u></b>
+ <br><br>
+
+
+Wszystkim osobom urodzonym w październiku życzymy dużo, dużo radości.
+
+<br>
+<a href="#">Zdjęcia - Galeria zdjęć</a>
+<br><br>
+
+ 
+
+ 
+
+<b><u>„Złota jesień w Kątach”</u></b><br>
+13.09.2018r.<br>
+
+   W imprezie integracyjnej pod nazwą " Złota jesień w Katach" wzięło  udział  18 placówek w tym około 250 osób. Główną atrakcją imprezy był występ Teatru Tańca z Ukrainy "Kwieciste Gwiazdy", W trakcie spotkania uczestnicy mieli możliwość zabawy i przygody z garncarstwem, mogli spróbować własnych sił  na kole i samodzielnie polepić w glinie. Dla wielbicieli słodkości przygotowano niespodziankę w postaci waty cukrowej i popcornu. Wszyscy mogli zasmakować przepysznych specjałów: sójki mazowieckiej oraz serów z zagrody Pani Honoraty. Dla miłośników prac manualnych przygotowano kącik plastyczny w którym uczestnicy robili jeże i ludziki wykorzystując dary jesieni. Aby ten miły czas pozostał nie tylko w naszych sercach i wspomnieniach uczestnicy mogli wykonać pamiątkowe fotografie w przygotowanej dla nich foto-budce. Akcentując jubileusz 100-lecia odzyskania przez Polskę Niepodległości w niebo zostało wypuszczone 100 balonów w barwach narodowych i wspólnie zaśpiewano pieśń "Ukochany kraj". Dla wielbicieli historii i militariów zorganizowano kącik patriotyczny,  prezentację stacjonarną czołgów jak i strojów wojskowych z okresu II wojny światowej przez członków Towarzystwa Pamięci VII Pułku Ułanów Lubelskich. Podczas imprezy goście mieli możliwość przejażdżki bryczką. Wiele radości sprawiła zabawa bańkami mydlanymi. Atrakcją zawierającą elementy terapii był bliski kontakt z Alpakami, przytulanie i głaskanie ich milutkiego futerka wywoływało ogromną radość i uśmiech wśród uczestników. Podczas imprezy można było zasmakować potraw przygotowanych przez personel placówki, była grochówka, pyszny bigos, potrawy z grilla oraz gorące placki ziemniaczane - potrawa kojarzona z jesienią. Nie obyło się bez słodkości, owoców, kawy, herbaty, był również kącik z przysmakami wiejskimi w tym przepyszny smalec. Zwieńczeniem imprezy była wspólna zabawa taneczna. Wesołym zabawom i tańcom nie było końca.<a href="#">Zdjęcia - Galeria zdjęć</a>
+
+
+
+                    
+                    </div>
+                    
+                    
+                    
+                
+            </div>
+                
+            
+            
+                
+            </div>
+           
+            
+        </div>
+   
+      </div>
+   
+      
+      <div class="row" >
+			<div class="text-center col-12 mt-3 mb-3">
+				<div>
+					Created by <a  href="http://www.arisco.pl/" target="_blank" title="Tworzenie stron internetowych">ARISCO</a>
+				</div>
+				<div>
+					Copyright &#169; 2020 DPS Jedlina. Wszelkie prawa zastrzeżone
+				</div>
+			</div>
+                </div>
+      </div>
+
+      
+        <br> 
+      
+
+  
+
+
+
+<script>
+$('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+});
+</script>
+  
+</body>
+</html>
+
