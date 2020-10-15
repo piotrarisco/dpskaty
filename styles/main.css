@@ -395,7 +395,7 @@ a.middle:hover:before {
 
 
 .pz-pagination a {
-  color: rgb(0,51,153);
+  color: rgb(100,110,181);
   float: left;
   padding: 4px 11px;
   text-decoration: none;
@@ -403,7 +403,7 @@ a.middle:hover:before {
 }
 
 .pz-pagination a.active {
-  background-color: rgb(0,51,153);
+  background-color: rgb(100,110,181);
   color: white;
 }
 
